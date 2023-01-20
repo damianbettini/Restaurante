@@ -1,9 +1,9 @@
 package com.example.restoranteostrovskybettini.Repository;
 
-import com.example.restoranteostrovskybettini.Entity.Bebida;
+import com.example.restoranteostrovskybettini.Entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface BebidaRepository extends JpaRepository<Bebida,Long> {
+public interface RoleRepository extends JpaRepository<Role,Long> {
 }

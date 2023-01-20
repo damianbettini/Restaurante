@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import static org.springframework.security.config.Customizer.withDefaults;
 
+
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig {
