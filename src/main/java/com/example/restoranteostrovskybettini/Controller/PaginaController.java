@@ -7,9 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class PaginaController {
 
-    @GetMapping("/menu")
-    public String menu(){
-        return "menu.html";
-    }
+
 
 }

@@ -25,8 +25,8 @@ public class WebSecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests((authz) -> authz
-                        .requestMatchers("holaMundo").permitAll()
-                        .requestMatchers("bootstrap").hasRole("admin")
+                        .requestMatchers("login").permitAll()
+                        .requestMatchers("menu").hasRole("admin")
                         .anyRequest()
                         .authenticated()
 

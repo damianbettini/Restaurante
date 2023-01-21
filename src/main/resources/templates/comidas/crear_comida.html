@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Comidas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#"> Control de Comidas</a>
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"> <a class="nav-link"
+            th:href="@{/comidas}">Control de Comidas</a></li>
+        </ul>
+    </div>
+</nav>
+
+<br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+                <h1 class="text-center">Registro de Comida</h1>
+                <div class="card-body">
+                    <form th:action="@{/comidas}" th:object="${comida}" method="POST">
+
+                        <div class="form-group">
+                            <label>Nombre : </label>
+                            <input type="text" name="nombre" th:field="*{nombre}" class="form-control" placeholder="Escriba el nombre de la comida : " required>
+                        </div>
+<br>
+                        <div class="form-group">
+                            <label>Precio : </label>
+                            <input type="text" name="precio" th:field="*{precio}" class="form-control" placeholder="Escriba el precio de la comida : " required>
+                        </div>
+<br>
+                        <br>
+                        <div class="box-footer">
+                            <button class="btn btn-success">Guardar</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>

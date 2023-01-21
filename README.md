@@ -32,3 +32,16 @@
 HACER HTML DESDE CERO UNA VEZ QUE INGRESA EL USUARIO Y LO MANDE AL MENU
 HACER LO QUE HIZO LAUTI CON PERSONAS PERO QUE SEA CON COMIDAS
 VALIDAR CLAVE Y USUARIO COMO EN APP BANCO
+
+
+OPCION 1: <br>
+pagina 1: fondo de restaurante con ingreso de usuario y contraseña
+ apreta ingresar y si se verifica pasa a pagina dos <br>
+pagina 2: menu del resto <br>
+
+OPCION 2: <br>
+pagina 1: fondo de restaurante con ingreso de usuario y contraseña <br>
+apreta ingresar y si se verifica pasa a pagina dos <br>
+pagina 2: tabla que muestra los usuarios y podes editarlos, eliminar <br>
+hay un boton para ir a ver el menu(pagina 3) <br>
+pagina 3: menu del resto <br>

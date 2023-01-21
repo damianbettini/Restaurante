@@ -13,6 +13,9 @@ public class Comida{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    @Column(name="nombre", nullable = false)
     private String nombre;
-    private Double precio;
+    @Column(name="precio", nullable = false)
+    private String precio;
 }

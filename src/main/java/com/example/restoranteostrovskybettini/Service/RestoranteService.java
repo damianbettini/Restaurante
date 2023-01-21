@@ -16,10 +16,10 @@ import java.util.ArrayList;
 public class RestoranteService {
 
 
-    private ComidaService comidaService;
+    private ComidaServiceImp comidaServiceImp;
 
 
-    private BebidasService bebidasService;
+    private BebidasServiceImp bebidasServiceImp;
 
 
 
@@ -31,8 +31,8 @@ public class RestoranteService {
         this.comidaRepository = context.getBean(ComidaRepository.class);
         this.bebidaRepository = context.getBean(BebidaRepository.class);
         this.userRepository = context.getBean(UserRepository.class);
-        this.bebidasService = context.getBean(BebidasService.class);
-        this.comidaService = context.getBean(ComidaService.class);
+        this.bebidasServiceImp = context.getBean(BebidasServiceImp.class);
+        this.comidaServiceImp = context.getBean(ComidaServiceImp.class);
     }
 
     public Restorante crearRestorante(){
@@ -43,8 +43,8 @@ public class RestoranteService {
 
         restorante.setNombre("BettiniOstrovsky");
 
-        comidas = comidaService.crearListaComidas();
-        bebidas = bebidasService.crearListaBebidas();
+        comidas = comidaServiceImp.crearListaComidas();
+        bebidas = bebidasServiceImp.crearListaBebidas();
         restorante.setComidas(comidas);
         restorante.setBebidas(bebidas);
 
