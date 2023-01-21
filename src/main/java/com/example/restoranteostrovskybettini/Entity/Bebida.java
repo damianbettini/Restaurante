@@ -1,6 +1,6 @@
 package com.example.restoranteostrovskybettini.Entity;
 
-import com.example.restoranteostrovskybettini.Enum.CategoriaBebida;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,7 +17,10 @@ public class Bebida{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    @Column(name="nombre", nullable = false)
     private String nombre;
-    private Double precio;
-    private CategoriaBebida categoriaBebida;
+    @Column(name="precio", nullable = false)
+    private String precio;
+    @Column(name="categoria", nullable = false)
+    private String categoriaBebida;
 }

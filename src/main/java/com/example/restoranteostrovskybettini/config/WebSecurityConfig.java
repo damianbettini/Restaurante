@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import static org.springframework.security.config.Customizer.withDefaults;
 
+
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig {
@@ -24,8 +25,8 @@ public class WebSecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests((authz) -> authz
-                        .requestMatchers("holaMundo").permitAll()
-                        .requestMatchers("bootstrap").hasRole("admin")
+                        .requestMatchers("login").permitAll()
+                        .requestMatchers("menu").hasRole("admin")
                         .anyRequest()
                         .authenticated()
 

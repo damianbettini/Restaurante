@@ -1,0 +1,23 @@
+body{
+    background: url(../img/fondoprincipal.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body,html{
+    font-size: 25px;
+}
+
+.row{
+
+    height: 100vh;
+    display: flex;
+
+    align-items: center;
+
+}
+
+.hola{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
